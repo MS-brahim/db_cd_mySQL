@@ -128,6 +128,6 @@ alter table Guichet add constraint FK_association5 foreign key (Bur_idBureau)
 /==============================================================*/
 
 /* login Admin with password */
-CREATE USER 'brahim'@'localhost' IDENTIFIED BY 'yassine';
-GRANT ALL PRIVILEGES ON *.* TO 'brahim'@'localhost';
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'yassine';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
 FLUSH PRIVILEGES

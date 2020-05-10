@@ -2,9 +2,8 @@
 /* DBMS name:      MySQL 5.0                                    */
 /* Created on:     02/05/2020 02:15:38                          */
 /*==============================================================*/
-
-CREATE DATABASE archive ;
-USE archive;
+CREATE DATABASE GestionBank ;
+USE GestionBank;
 
 drop table if exists Archive;
 
@@ -120,14 +119,4 @@ alter table Bureau add constraint FK_association6 foreign key (Sec_idSecteur)
 
 alter table Guichet add constraint FK_association5 foreign key (Bur_idBureau)
       references Bureau (idBureau) on delete restrict on update restrict;
-      
-      
-      
-/*==============================================================/
- Login and PassWord                                             
-/==============================================================*/
 
-/* login Admin with password */
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'yassine';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
-FLUSH PRIVILEGES

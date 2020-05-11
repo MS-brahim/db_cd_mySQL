@@ -19,3 +19,13 @@ WHERE nom='BANK1';
 --delete 
 DELETE FROM Bureau 
 WHERE nom = 'CDMR';
+
+
+
+/* login Admin with password */
+
+
+
+CREATE USER 'root'@'localhost' IDENTIFIED BY '';
+
+ grant insert on GestionBank.* to 'root'@'localhost';
